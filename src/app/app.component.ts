@@ -3,9 +3,17 @@ import { Component, signal } from '@angular/core';
 @Component({
   selector: 'app-root',
   standalone: false,
-  styleUrl: './app.component.css',
   templateUrl: './app.component.html',
 })
 export class App {
-  protected readonly title = signal('angular-formation-first-program');
+  name = 'Fatima';
+  formation = 'developpeuse web';
+  schcool ='emsi marrakech';
+  age = 23;
+  count = signal(0);
+  showDetails = signal(false);
+  sayHello() {
+    alert('Bienvenue dans mon application Angular !');
+  }
 }
+
